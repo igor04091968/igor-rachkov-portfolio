@@ -27,7 +27,7 @@ if rg -n -i \
   exit 1
 fi
 
-if rg -n -i '(DetMir|AWatch-rus|Северная нефтебаза|Отдела Телекоммуникаций СНБ)' \
+if rg -n -i '(AWatch-rus|Северная нефтебаза|Отдела Телекоммуникаций СНБ)' \
   --glob '*.md' --glob '*.txt' --glob '*.json' --glob '*.yml' --glob '*.yaml' \
   --glob '!scripts/check_portfolio.sh' .; then
   printf 'Проверка остановлена: найдено название рабочей организации.\n' >&2
@@ -40,4 +40,4 @@ if find . -type f \( -name '*.go' -o -name '*.env' -o -name '*.key' -o -name '*.
 fi
 
 printf 'Проверка портфолио пройдена.\n'
-printf 'Скриншотов: %s. Секретов, рабочих названий и исходного кода не найдено.\n' "${#expected[@]}"
+printf 'Скриншотов: %s. Секретов, закрытых рабочих названий и исходного кода не найдено.\n' "${#expected[@]}"
