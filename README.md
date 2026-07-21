@@ -21,7 +21,7 @@ Directory, сетями, VPN, почтой, телефонией, монитор
   документирования и проверки инженерных решений;
 - разбирать инциденты на границе Windows, Linux, сети и прикладных сервисов;
 - работать с Proxmox, виртуализацией, сетевым периметром, VLAN, VPN, DNS,
-  почтой и IP-телефонией;
+  почтой, корпоративными мессенджерами и IP-телефонией;
 - переводить личный опыт эксплуатации в понятные инструменты и инструкции для
   команды.
 
@@ -86,7 +86,16 @@ Linux- и Windows-узлов. Важная часть этой работы — 
 
 [Опыт работы с инфраструктурой](docs/INFRASTRUCTURE_EXPERIENCE_RU.md)
 
-### 7. Asterisk SSH WebUI
+### 7. XMPP/Jabber, Miranda и интеграция с телефонией
+
+Основной контур корпоративных сообщений построен на XMPP/Jabber с Miranda IM
+на рабочих местах. Интеграция с Asterisk позволяет звонить по клику из Miranda,
+получать статусы и уведомления о вызовах, управлять переадресацией и запускать
+телефонную конференцию из сообщения.
+
+[Корпоративные сообщения и телефония](docs/CASE_XMPP_MESSAGING_RU.md)
+
+### 8. Asterisk SSH WebUI
 
 Авторский веб-интерфейс для диагностики и безопасного администрирования
 Asterisk через SSH. Проект показывает, как я разделяю операторские и инженерные
@@ -104,7 +113,7 @@ Asterisk через SSH. Проект показывает, как я разде
 | Наблюдаемость и данные | ActivityWatch, Grafana, Prometheus, ClickHouse, PostgreSQL, SQLite |
 | Автоматизация и разработка | Rust, Go, Bash, POSIX sh, PowerShell, Python, Ansible |
 | ИИ в эксплуатации | Codex, Pollinations, GitHub Copilot, OpenCode, LLM workflows, MCP, semantic retrieval |
-| Корпоративные сервисы | Asterisk, Sendmail, qmail, Postfix, Exim, Dovecot |
+| Корпоративные сервисы | Asterisk, XMPP/Jabber, ejabberd, Miranda IM, Sendmail, qmail, Postfix, Exim, Dovecot |
 | Эксплуатация | health-check, SLO, отчётность, резервное копирование, восстановление, runbook, CI |
 
 ## Как я принимаю инженерные решения
