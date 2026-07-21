@@ -45,4 +45,4 @@ Windows-коллекторов, Grafana и связанных служб. Shell-
 - [Rust workspace эксплуатационных модулей](https://github.com/igor04091968/AWatch-rus/tree/main/adk-rust);
 - [Ansible-развёртывание](https://github.com/igor04091968/AWatch-rus/tree/main/ansible);
 - [Go-проект Asterisk SSH WebUI](ASTERISK_SSH_WEBUI_RU.md) — архитектура и
-  демонстрация без публикации проприетарного исходного кода.
+  рабочий интерфейс.

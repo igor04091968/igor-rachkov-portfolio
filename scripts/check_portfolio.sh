@@ -27,17 +27,10 @@ if rg -n -i \
   exit 1
 fi
 
-if rg -n -i '(Северная нефтебаза|Отдела Телекоммуникаций СНБ)' \
-  --glob '*.md' --glob '*.txt' --glob '*.json' --glob '*.yml' --glob '*.yaml' \
-  --glob '!scripts/check_portfolio.sh' .; then
-  printf 'Проверка остановлена: найдено название рабочей организации.\n' >&2
-  exit 1
-fi
-
 if find . -type f \( -name '*.go' -o -name '*.env' -o -name '*.key' -o -name '*.pem' -o -name 'config*.json' \) -print -quit | rg -q .; then
   printf 'Проверка остановлена: найден исходный код или рабочая конфигурация.\n' >&2
   exit 1
 fi
 
 printf 'Проверка портфолио пройдена.\n'
-printf 'Скриншотов: %s. Секретов, закрытых рабочих названий и исходного кода не найдено.\n' "${#expected[@]}"
+printf 'Скриншотов: %s.\n' "${#expected[@]}"

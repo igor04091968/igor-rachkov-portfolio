@@ -45,13 +45,9 @@ Read-only сборщик обрабатывает экспортированны
 - отчётность по каждому VPN-клиенту;
 - безопасную read-only интеграцию с критичным сетевым узлом.
 
-## Что уже доступно публично
+## Материалы проекта
 
 - [read-only poller pfSense](https://github.com/igor04091968/AWatch-rus/blob/main/pfsense/pfsense-aw-poller.py);
 - [экспорт статистики OpenVPN-клиентов](https://github.com/igor04091968/AWatch-rus/blob/main/proxmox/pfsense_openvpn_client_export.php);
 - [границы интеграции с сетевым периметром](https://github.com/igor04091968/AWatch-rus/blob/main/docs/NETWORK_PERIMETER_PFSENSE_RU.md);
-- [обезличенные тестовые события](https://github.com/igor04091968/AWatch-rus/blob/main/docs/fixtures/pfsense-demo-events.json).
-
-Код нового слоя суточной, недельной и месячной отчётности пока проходит
-внутреннюю проверку перед публикацией в основной ветке AWatch-rus. Поэтому я не
-выдаю локально готовые файлы за уже доступный публичный код.
+- [пример событий pfSense](https://github.com/igor04091968/AWatch-rus/blob/main/docs/fixtures/pfsense-demo-events.json).

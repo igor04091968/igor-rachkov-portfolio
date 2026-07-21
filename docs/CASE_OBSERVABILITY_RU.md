@@ -38,6 +38,3 @@ read-only диагностика, затем формируется ограни
 - [представление для руководителя](https://github.com/igor04091968/AWatch-rus/blob/main/docs/screenshots/01-executive-overview.png);
 - [представление эксплуатации](https://github.com/igor04091968/AWatch-rus/blob/main/docs/screenshots/04-operations-view.png);
 - [архитектура продукта](https://github.com/igor04091968/AWatch-rus/blob/main/docs/screenshots/07-product-architecture.png).
-
-Демонстрационные материалы не содержат реальных сотрудников, адресов и событий
-заказчика.
