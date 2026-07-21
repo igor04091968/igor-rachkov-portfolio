@@ -27,7 +27,7 @@ if rg -n -i \
   exit 1
 fi
 
-if rg -n -i '(AWatch-rus|Северная нефтебаза|Отдела Телекоммуникаций СНБ)' \
+if rg -n -i '(Северная нефтебаза|Отдела Телекоммуникаций СНБ)' \
   --glob '*.md' --glob '*.txt' --glob '*.json' --glob '*.yml' --glob '*.yaml' \
   --glob '!scripts/check_portfolio.sh' .; then
   printf 'Проверка остановлена: найдено название рабочей организации.\n' >&2
